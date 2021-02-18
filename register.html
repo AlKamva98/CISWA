@@ -43,14 +43,14 @@
         <h4 class="mb-3 fw-normal">Please Fill in your details to sign up</h4>
       <form method="post" class="row g-3 m-4 p-4"> 
         <div class="col-md-6">
-            <label for="validationServer01" class="visually-hidden" >First name</label>
-            <input type="text" class="form-control " id="validationServer01" placeholder="First Name" required autofocus> 
+            <label for="FName" class="visually-hidden" >First name</label>
+            <input type="text" class="form-control " id="inputFName" placeholder="First Name" required autofocus> 
             <div class="valid-feedback">
             </div>
         </div>
         <div class="col-md-6">
-            <label for="validationServer02" class="visually-hidden">Last name</label>
-            <input type="text" class="form-control " id="validationServer02" placeholder="Last Name" required>
+            <label for="LName" class="visually-hidden">Last name</label>
+            <input type="text" class="form-control " id="inputLName" placeholder="Last Name" required>
             <div class="valid-feedback">
             </div>
         </div>
@@ -75,7 +75,7 @@
          <input type="text" id="inputCompany" class="form-control" placeholder="Company" required>
          </div>
           <div class="col-md-12">
-              <select class="form-select" aria-label=".form-select-lg example">
+              <select class="form-select" id="selEmployees" aria-label=".form-select-lg example">
                   <option selected>Employees</option>
                   <option value="1">1-10 employees</option>
                   <option value="2">11-20 employees</option>
@@ -85,7 +85,7 @@
               </select>
           </div>
           <div class="col-md-12">
-              <select class="form-select mb-3" aria-label=".form-select-lg example">
+              <select class="form-select mb-3" id="selCountry" aria-label=".form-select-lg example">
                   <option selected>Country</option>
                   <option value="1">Australia</option>
                   <option value="2">Botswana</option>
@@ -116,17 +116,17 @@
           </div>
             <div class="checkbox mb-3">
             <text>
-                <input type="checkbox" value="i-agree">   I agree to the <a href="#" >Master Subscription Agreement.</a>
+                <input type="checkbox" id="chkAgreement" value="i-agree">   I agree to the <a href="#" >Master Subscription Agreement.</a>
             </text>
              </div>
         <div class="checkbox mb-3 ">
-        <span>By registering, you agree to the processing of your personal data by Salesforce as described in the </span>
+        <span>By registering, you agree to the processing of your personal data by Bahati Tech as described in the </span><a href="">Privacy policy</a>
     </div>
-        <a href="questions.html" class="w-100 btn btn-lg btn-primary"  type="submit">REGISTER</a>
-       
+        <a href="#" class="w-100 btn btn-lg btn-primary" id="btnReg"  type="submit">REGISTER</a>
+        
         <div class="checkbox mb-3">
         <span>
-            <input type="checkbox" value="comms">   Yes, I would like to receive marketing communications regarding Salesforce products, services, and events. I can unsubscribe at a later time.        </span>
+            <input type="checkbox" value="comms">   Yes, I would like to receive marketing communications regarding Bahati Tech products, services, and events. I can unsubscribe at a later time.        </span>
         </div>
     </form>
         </div>
